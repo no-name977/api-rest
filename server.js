@@ -8,6 +8,11 @@ const port = 3002;
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 
+
+//panggil routes
+var routes = require('./routes');
+routes(app);
+
  app.listen(port, ()=>{
      console.log(`server running in port ${port}`);
  });

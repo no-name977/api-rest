@@ -4,5 +4,5 @@ var connection = require('./koneksi');
 
 
 exports.index = function(req, res){
-    response.ok("Application is running");
+    response.ok("Application rest api is running");
 }
